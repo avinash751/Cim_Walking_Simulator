@@ -22,6 +22,7 @@ public class ReactToInputTextPrompt : MonoBehaviour
         {
             inputPressed = true;
             Invoke("CallUnityEventAfterDelay", delayTimeToCallEvent);
+            Destroy(textInputPrompting.gameObject,5f);
             return true;
         }
         return false;
@@ -33,4 +34,6 @@ public class ReactToInputTextPrompt : MonoBehaviour
         Debug.Log(gameObject.name + "Based on Input, Unity Event has been called");
         textInputPrompting.CheckWhetherInputIsPressed -= CallEventWhenInputPressedAndFadeOutText;
     }
+
+    
 }
