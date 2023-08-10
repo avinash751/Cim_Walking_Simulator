@@ -24,14 +24,11 @@ public class PlayerForwardMovement : MonoBehaviour
         {
             MovePlayer();
         }
-        else
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-        }
+        
     }
     void MovePlayer()
     {
-        rb.velocity = (transform.forward * forwardSpeed) * Time.deltaTime;
+        rb.velocity = (transform.forward * forwardSpeed);
     }
 
     public void EnableMovment(bool _enabled)

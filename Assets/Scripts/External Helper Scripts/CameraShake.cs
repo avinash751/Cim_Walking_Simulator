@@ -60,6 +60,14 @@ public class CameraShake : MonoBehaviour
 
     }
 
+    public void  EnableInfiniteCameraShake(bool _isInfiniteEnables)
+    {
+        time = 0;
+        cameraShakeEnabled = _isInfiniteEnables;
+        this.isInfinite = _isInfiniteEnables;
+        cameraToShake.localPosition = startPosition;
+    }
+
     public void SetCameraShakeValues(float frequency, float amplitude, float duration)
     {
         this.amplitude = amplitude;

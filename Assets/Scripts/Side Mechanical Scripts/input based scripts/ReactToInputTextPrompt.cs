@@ -22,7 +22,7 @@ public class ReactToInputTextPrompt : MonoBehaviour
         {
             inputPressed = true;
             Invoke("CallUnityEventAfterDelay", delayTimeToCallEvent);
-            Destroy(textInputPrompting.gameObject,5f);
+            Destroy(textInputPrompting,5f);
             return true;
         }
         return false;

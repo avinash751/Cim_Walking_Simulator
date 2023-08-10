@@ -60,7 +60,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: weight
-    path: Main Camera/RadialBlurVolume
+    path: 
     classID: 114
     script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_PPtrCurves: []
@@ -72,7 +72,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 685850953
+      path: 0
       attribute: 130897217
       script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
       typeID: 114
@@ -143,7 +143,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: weight
-    path: Main Camera/RadialBlurVolume
+    path: 
     classID: 114
     script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_EulerEditorCurves: []
