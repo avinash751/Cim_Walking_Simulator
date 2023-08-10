@@ -12,7 +12,7 @@ public class CameraShake : MonoBehaviour
     [SerializeField] float amplitude;
     [SerializeField] float duration;
 
-    [SerializeField] bool cameraShakeEnabled = false;
+    [SerializeField] bool cameraShakeEnabled;
     [SerializeField] bool isInfinite;
     void Start()
     {
@@ -27,6 +27,8 @@ public class CameraShake : MonoBehaviour
 
     void CameraShakeOnceWithDuration()
     {
+        if(cameraShakeEnabled && isInfinite) return;
+
         if (time < duration && cameraShakeEnabled && !isInfinite)
         {
             time += Time.deltaTime;
