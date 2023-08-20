@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public int sceneIndex;
-    
+
 
     void TransitionToChosenScene()
     {
@@ -18,8 +18,16 @@ public class SceneTransition : MonoBehaviour
         SceneManager.LoadScene(_sceneIndex);
     }
 
-    void TransitionToChosenSceneAfterDelay(int _delay)
+    public void TransitionToChosenSceneAfterDelay(int _delay)
     {
-      Invoke("TransitionToChosenScene", _delay);
+
+        Invoke("TransitionToChosenScene", _delay);
     }
+
+
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
+    
 }
